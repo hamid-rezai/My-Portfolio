@@ -1,0 +1,109 @@
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  &-dark {
+    @extend %btn-shared;
+    background-color: $dark-color;
+    color: $light-color;
+  }
+  &-main {
+    @extend %btn-shared;
+    background-color: $main-color;
+    color: $light-color;
+  }
+  &-light {
+    @extend %btn-shared;
+    background-color: $light-color;
+    color: $dark-color;
+    &:hover {
+      background-color: #272727;
+      color: #fff;
+      transition: all 0.5s;
+    }
+  }
+}
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.text-center {
+  text-align: center;
+}
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+.bottom-line {
+  display: block;
+  width: 6rem;
+  height: 2px;
+  background-color: $main-color;
+  margin: 10px auto 10px auto;
+}
+.section-title {
+  font-size: 40px;
+  margin: 10px 0;
+  display: block;
+  text-transform: uppercase;
+}
+.bg {
+  &-main {
+    background-color: $main-color;
+    color: set-text-color($main-color);
+  }
+  &-light {
+    background-color: $light-color;
+    color: set-text-color($light-color);
+  }
+  &-dark {
+    background-color: $dark-color;
+    color: set-text-color($dark-color);
+  }
+  &-medium {
+    background-color: $medium-color;
+    color: set-text-color($medium-color);
+  }
+}
