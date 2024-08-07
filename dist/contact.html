@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Hamid Rezai | Portfolio</title>
+  </head>
+  <body>
+
+    <!-- Header ---------------------------------------------------------------->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="main-nav">
+          <div class="logo">
+            <h3>HR <i class="fa-solid fa-record-vinyl"></i></h3>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="animate__animated animate__bounce scard" id="scard">
+      <div class="layout">
+        <i class="fa-solid fa-square-check icon" ></i>
+        <h2>Message Sent!</h2>
+      </div>
+      <p>Thanks for completing the form, We'll be in touch soon!</p>
+    </div>
+
+    <section id="contact-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Here is how you can reach me</p>
+        <form action="" id="contact-form">
+          <div class="text-fields">
+            <div class="input-section" id="name-section">
+              <input
+                autocomplete="off"
+                type="text"
+                id="name"
+                class="text-input name-input"
+                placeholder="Full Name" />
+                <p class="error-text" id="name-error"> Please enter your name</p>
+            </div>
+            <div class="input-section" id="subject-section">
+              <input
+                autocomplete="off"
+                type="text"
+                id="subject"
+                class="text-input subject-input"
+                placeholder="Subject" />
+                <p class="error-text" id="subject-error"> Please enter a subject</p>
+            </div>
+            <div class="input-section" id="email-section">
+              <input
+                autocomplete="off"
+                type="email"
+                id="email"
+                class="text-input email-input"
+                placeholder="Email" />
+                <p class="error-text" id="email-error"> Please enter a valid email</p>
+            </div>
+            <div class="input-section" id="phone-section">
+              <input
+                autocomplete="off"
+                type="text"
+                id="phone-number"
+                class="text-input phone-input"
+                placeholder="Phone Number" />
+                <p class="error-text" id="phone-error"> Please enter your phone number</p>
+            </div>
+            <div class="input-section" id="message-section">
+              <textarea
+                class="text-input message-input"
+                id="message"
+                placeholder="Message"></textarea>
+                <p class="error-text" id="message-error"> Please leave a message here</p>
+            </div>
+          </div>
+          <button type="submit" class="btn-dark" id="submitFormBtn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact-b" class="py-3 bg-dark">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>hamidsomething@gmail.com</p>
+          </div>
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>5555-555-555</p>
+          </div>
+          <div>
+            <i class="fas fa-address-card fa-2x"></i>
+            <h3>Address</h3>
+            <p>Sydney,something,something</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy; 2024, All Rights Reserved</p>
+        <div class="social">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../dist/js/contact.js"></script>
+  </body>
+</html>
