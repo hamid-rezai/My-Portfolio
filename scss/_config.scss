@@ -5,7 +5,7 @@ $light-color: #f4f4f4;
 $white-color: #fff;
 $medium-color: #ccc;
 $dark-color: #333;
-$bg-image: url('../image/home-picture.jpg');
+$bg-image: url("../image/home-picture.jpg");
 
 @function set-text-color($color) {
   @if (lightness($color) >50) {

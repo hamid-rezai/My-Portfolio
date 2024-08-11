@@ -11,27 +11,6 @@ const emailError = document.getElementById("email-error");
 const phoneError = document.getElementById("phone-error");
 const messageError = document.getElementById("message-error");
 
-// regex expressions
-const NameRegex = /^[A-Za-z\s]+$/;
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const phoneNumberRegex =
-  /(^1300\d{6}$)|(^1800|1900|1902\d{6}$)|(^0[2|3|7|8]{1}[0-9]{8}$)|(^13\d{4}$)|(^04\d{2,3}\d{6}$)/;
-
-var isValid = true;
-
-// Clear previous error states
-fullName.classList.remove("error-border");
-subject.classList.remove("error-border");
-email.classList.remove("error-border");
-message.classList.remove("error-border");
-phoneNumber.classList.remove("error-border");
-
-document.getElementById("name-error").style.display = "none";
-document.getElementById("subject-error").style.display = "none";
-document.getElementById("email-error").style.display = "none";
-document.getElementById("message-error").style.display = "none";
-document.getElementById("phone-error").style.display = "none";
-
 function submitForm(e) {
   e.preventDefault();
 
@@ -66,10 +45,31 @@ function submitForm(e) {
     isValid = false;
   }
   if (isValid) {
-    document.getElementById("scard").style.display = block;
+    document.getElementById("scard").style.display = "block";
   }
 
   return isValid;
 }
+
+// regex expressions
+const NameRegex = /^[A-Za-z\s]+$/;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const phoneNumberRegex =
+  /(^1300\d{6}$)|(^1800|1900|1902\d{6}$)|(^0[2|3|7|8]{1}[0-9]{8}$)|(^13\d{4}$)|(^04\d{2,3}\d{6}$)/;
+
+var isValid = true;
+
+// Clear previous error states
+fullName.classList.remove("error-border");
+subject.classList.remove("error-border");
+email.classList.remove("error-border");
+message.classList.remove("error-border");
+phoneNumber.classList.remove("error-border");
+
+document.getElementById("name-error").style.display = "none";
+document.getElementById("subject-error").style.display = "none";
+document.getElementById("email-error").style.display = "none";
+document.getElementById("message-error").style.display = "none";
+document.getElementById("phone-error").style.display = "none";
 
 contactForm.addEventListener("submit", submitForm);

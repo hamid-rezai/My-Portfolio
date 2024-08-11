@@ -122,9 +122,23 @@ image {
     }
   }
   &-b {
-    .states {
+    .stats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+        &:nth-child(odd) {
+          background-color: $light-color;
+        }
+        &:nth-child(even) {
+          background-color: $medium-color;
+        }
+      }
 
       ul {
         &:hover {
@@ -139,16 +153,6 @@ image {
       &-number {
         font-size: 2rem;
         font-weight: bold;
-      }
-
-      div {
-        padding: 30px 10px;
-        &:nth-child(odd) {
-          background-color: $light-color;
-        }
-        &:nth-child(even) {
-          background-color: $medium-color;
-        }
       }
     }
   }
@@ -408,10 +412,11 @@ image {
 .move {
   transform: translateX(0);
 }
-.error-border{
-  
+.error-border {
+  border: 1px solid red;
 }
 
+//Message sent in Contact form
 #scard {
   display: none;
 }
@@ -438,3 +443,5 @@ image {
   display: flex;
   align-items: center;
 }
+
+@import "media";
