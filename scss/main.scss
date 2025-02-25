@@ -186,7 +186,6 @@ image {
         transition: all 1s;
         padding: 1.5rem;
         font-size: 28px;
-
       }
       &-icon {
         display: flex;
@@ -208,7 +207,6 @@ image {
           background-color: $main-color;
           transform: scale(1.2);
           line-height: 90px;
-
         }
       }
     }
@@ -243,7 +241,6 @@ image {
     }
   }
   &-b {
-
     h2 {
       text-align: center;
     }
@@ -443,5 +440,3 @@ image {
   display: flex;
   align-items: center;
 }
-
-
