@@ -335,7 +335,7 @@ image {
 }
 
 #header-home {
-  background: url("/image/home-picture.jpg") no-repeat center center/cover;
+  background: url("../../dist/image/home-picture.jpg") no-repeat center center/cover;
   height: 100vh;
   color: #fff;
   position: relative;
