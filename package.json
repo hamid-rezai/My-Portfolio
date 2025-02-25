@@ -4,12 +4,12 @@
   "description": "Portfolio website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-     "build": "npm run sass"
+    "sass": "sass --watch scss/:dist/css/",
+    "build": "npm run sass"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^9.0.0"
+    "sass": "^1.85.0"
   }
 }

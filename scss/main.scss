@@ -1,6 +1,7 @@
-@import "config";
-@import "utilities";
-@import "item_grid";
+@use "config" as *;
+@use "utilities" as *;
+@use "item_grid" as *;
+@use "media" as *;
 
 // General styles
 * {
@@ -179,18 +180,19 @@ image {
         width: 15px;
         height: 15px;
         line-height: 15px;
-        background-color: $main-color;
-        color: set-text-color($main-color);
+        background-color: $dark-color;
+        color: $main-color;
         border-radius: 50%;
         transition: all 1s;
         padding: 1.5rem;
         font-size: 28px;
+
       }
       &-icon {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $dark-color;
+        background-color: $main-color;
         color: set-text-color($dark-color);
         width: 70px;
         height: 70px;
@@ -207,10 +209,6 @@ image {
           transform: scale(1.2);
           line-height: 90px;
 
-          .process-step {
-            background-color: $dark-color;
-            color: set-text-color($dark-color);
-          }
         }
       }
     }
@@ -245,6 +243,7 @@ image {
     }
   }
   &-b {
+
     h2 {
       text-align: center;
     }
@@ -386,6 +385,7 @@ image {
   }
   &-b {
     background-color: #555;
+    color: $white-color;
     .contact-info {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -444,4 +444,4 @@ image {
   align-items: center;
 }
 
-@import "media";
+

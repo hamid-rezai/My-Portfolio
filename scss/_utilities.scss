@@ -1,3 +1,5 @@
+@use "config" as *;
+
 .container {
   max-width: $website-width;
   padding: 0 1.5rem;
@@ -43,6 +45,12 @@
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
+}
+.leading{
+  color:#fff;
+}
+.progress-title {
+  color: #fff;
 }
 .text-center {
   text-align: center;
